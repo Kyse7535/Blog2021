@@ -11,8 +11,6 @@ try {
             } else {
                 throw new Exception("Impossible d'afficher la page");
             }
-        } elseif ($_GET['action'] == "accueil") {
-            CtlAccueil();
         } elseif ($_GET['action'] == "post") {
             if (isset($_GET['Id']) && $_GET['Id'] > 0) {
                 if (isset($_POST['nom']) && isset($_POST['comment'])) {
